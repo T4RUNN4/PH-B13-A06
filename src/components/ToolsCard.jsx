@@ -62,7 +62,7 @@ export default function ToolsCard({ product, cart, setCart }) {
         </ul>
         <div className="mt-6">
           <button
-            className={`btn btn-primary btn-block rounded-full ${status === "buy" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : "bg-green-700 border-0"}`}
+            className={`btn btn-primary btn-block rounded-full ${status === "buy" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : "bg-green-600 border-0"}`}
             type="button"
             onClick={() => addToCart(product)}
           >
