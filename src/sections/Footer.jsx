@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <>
-      <footer className="footer sm:footer-horizontal bg-[#101727] text-white p-10 md:px-32 py-28">
+    <footer className="bg-[#101727] text-white p-10 md:px-32 md:px-0">
+      <div className="footer sm:footer-horizontal pt-28">
         <p className="max-w-xs">
           <span className="text-2xl font-bold">DigiTools</span>
           <span className="text-gray-400">
@@ -68,8 +68,9 @@ export default function Footer() {
             </a>
           </div>
         </nav>
-      </footer>
-      <div className="footer sm:footer-horizontal footer-center bg-[#101727] text-white md:px-32 pb-10 flex flex-col md:flex-row justify-between">
+      </div>
+      <div class="divider before:bg-gray-300/50 after:bg-gray-300/50 py-8"></div>
+      <div className="footer sm:footer-horizontal footer-center pb-10 flex flex-col md:flex-row justify-between">
         <p className="text-gray-400">
           © {new Date().getFullYear()} DigiTools - All right reserved
         </p>
@@ -79,6 +80,6 @@ export default function Footer() {
           <a className="text-gray-400">Cookies</a>
         </nav>
       </div>
-    </>
+    </footer>
   );
 }
