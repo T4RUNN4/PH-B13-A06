@@ -13,7 +13,7 @@ export default function ProcessCard({
         </div>
       </div>
       <div className="card-body flex items-center">
-        <div className="flex h-16 w-16 p-3 bg-linear-to-r from-[#4F39F6]/10 to-[#9514FA]/10 rounded-full">
+        <div className="flex h-16 w-16 p-3 bg-linear-to-r from-[#4F39F6]/10 to-[#9514FA]/10 rounded-full mb-4">
           <img src={imageURL} alt={imageAlt} />
         </div>
         <h2 className="card-title text-2xl font-bold">{title}</h2>

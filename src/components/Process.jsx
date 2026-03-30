@@ -11,7 +11,8 @@ export default function Process() {
         "Sign up for free in seconds. No credit card required.",
       imageURL: User,
       imageAlt: "User Icon",
-      stepCount: 1,
+      stepCount: "01",
+      id: 1
     },
     step2: {
       title: "Choose Product",
@@ -19,14 +20,16 @@ export default function Process() {
         "Browse our catalog and select the tools that fit your needs.",
       imageURL: Package,
       imageAlt: "Package Icon",
-      stepCount: 2,
+      stepCount: "02",
+      id: 2
     },
     step3: {
       title: "Start Creating",
       description: "Download and start using your premium tools immediately.",
       imageURL: Rocket,
       imageAlt: "Rocket Icon",
-      stepCount: 3,
+      stepCount: "03",
+      id: 3
     },
   };
 
@@ -41,7 +44,7 @@ export default function Process() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-10">
         {Object.values(details).map((detail) => (
           <ProcessCard
-            key={detail.stepCount}
+            key={detail.id}
             title={detail.title}
             description={detail.description}
             stepCount={detail.stepCount}

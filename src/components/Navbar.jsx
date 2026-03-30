@@ -27,19 +27,19 @@ export default function Navbar() {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Products</a>
+              <a className="font-semibold">Products</a>
             </li>
             <li>
-              <a>Features</a>
+              <a className="font-semibold">Features</a>
             </li>
             <li>
-              <a>Pricing</a>
+              <a className="font-semibold">Pricing</a>
             </li>
             <li>
-              <a>Testimonial</a>
+              <a className="font-semibold">Testimonial</a>
             </li>
             <li>
-              <a>FAQ</a>
+              <a className="font-semibold">FAQ</a>
             </li>
           </ul>
         </div>
@@ -48,19 +48,19 @@ export default function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Products</a>
+            <a className="font-semibold">Products</a>
           </li>
           <li>
-            <a>Features</a>
+            <a className="font-semibold">Features</a>
           </li>
           <li>
-            <a>Pricing</a>
+            <a className="font-semibold">Pricing</a>
           </li>
           <li>
-            <a>Testimonial</a>
+            <a className="font-semibold">Testimonial</a>
           </li>
           <li>
-            <a>FAQ</a>
+            <a className="font-semibold">FAQ</a>
           </li>
         </ul>
       </div>
