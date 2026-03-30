@@ -1,6 +1,9 @@
+import { useState } from "react";
 import ToolsCard from "./ToolsCard";
 
 export default function ToolsContainer() {
+  const [currentButton, setCurrentButton] = useState("products");
+
   return (
     <div className="flex flex-col items-center justify-center px-4 md:px-16 lg:px-32 py-28">
       <h3 className="text-4xl font-black text-[#101727] leading-14">
@@ -11,10 +14,12 @@ export default function ToolsContainer() {
         to boost your productivity and creativity.
       </p>
       <div className="flex mt-4 gap-2 rounded-full border border-solid border-gray-100 p-1">
-        <button className="btn btn-primary rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
+        <button
+          className={`btn ${currentButton==="products" ? 'btn-primary rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]' : 'btn-ghost hover:rounded-full'}`} onClick={() => setCurrentButton("products")}
+        >
           Products
         </button>
-        <button className="btn btn-ghost">Cart (0)</button>
+        <button className={`btn ${currentButton==="carts" ? 'btn-primary rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]' : 'btn-ghost hover:rounded-full'}`} onClick={() => setCurrentButton("carts")}>Cart (0)</button>
       </div>
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-7">
         <ToolsCard></ToolsCard>
