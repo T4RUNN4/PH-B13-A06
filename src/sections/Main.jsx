@@ -2,6 +2,7 @@ import Hero from "../components/Hero";
 import Counts from "../components/Counts";
 import ToolsContainer from "../components/ToolsContainer";
 import Process from "../components/Process";
+import Pricing from "../components/Pricing";
 
 export default function Main() {
   return (
@@ -10,6 +11,7 @@ export default function Main() {
       <Counts></Counts>
       <ToolsContainer></ToolsContainer>
       <Process></Process>
+      <Pricing></Pricing>
     </main>
   );
 }
