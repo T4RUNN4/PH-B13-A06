@@ -1,6 +1,6 @@
 import Cart from "../assets/products/shopping-cart.png";
 
-export default function Navbar() {
+export default function Navbar({ cart }) {
   return (
     <div className="navbar bg-base-100 md:px-16 lg:px-32 shadow-sm">
       <div className="navbar-start">
@@ -67,6 +67,7 @@ export default function Navbar() {
       <div className="navbar-end">
         <a className="btn btn-ghost">
           <img src={Cart} alt="Cart icon" />
+          <p>{cart.length}</p>
         </a>
         <a className="btn btn-ghost">Login</a>
         <a className="btn btn-primary rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]">

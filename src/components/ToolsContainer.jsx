@@ -1,7 +1,8 @@
 import { useState } from "react";
 import ToolsCard from "./ToolsCard";
+import Cart from "../assets/products/shopping-cart.png"
 
-export default function ToolsContainer() {
+export default function ToolsContainer({ cart }) {
   const [currentButton, setCurrentButton] = useState("products");
 
   return (
@@ -15,20 +16,40 @@ export default function ToolsContainer() {
       </p>
       <div className="flex mt-4 gap-2 rounded-full border border-solid border-gray-100 p-1">
         <button
-          className={`btn ${currentButton==="products" ? 'btn-primary rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]' : 'btn-ghost hover:rounded-full'}`} onClick={() => setCurrentButton("products")}
+          className={`btn ${currentButton === "products" ? "btn-primary rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : "btn-ghost hover:rounded-full"}`}
+          onClick={() => setCurrentButton("products")}
         >
           Products
         </button>
-        <button className={`btn ${currentButton==="carts" ? 'btn-primary rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]' : 'btn-ghost hover:rounded-full'}`} onClick={() => setCurrentButton("carts")}>Cart (0)</button>
+        <button
+          className={`btn ${currentButton === "carts" ? "btn-primary rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : "btn-ghost hover:rounded-full"}`}
+          onClick={() => setCurrentButton("carts")}
+        >
+          Cart ({cart.length})
+        </button>
       </div>
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-7">
-        <ToolsCard></ToolsCard>
-        <ToolsCard></ToolsCard>
-        <ToolsCard></ToolsCard>
-        <ToolsCard></ToolsCard>
-        <ToolsCard></ToolsCard>
-        <ToolsCard></ToolsCard>
-      </div>
+
+      {currentButton === "products" ? (
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-7">
+          {" "}
+          <ToolsCard></ToolsCard>
+          <ToolsCard></ToolsCard>
+          <ToolsCard></ToolsCard>
+          <ToolsCard></ToolsCard>
+          <ToolsCard></ToolsCard>
+          <ToolsCard></ToolsCard>
+        </div>
+      ) : (
+        <div className="mt-16 flex flex-col items-center justify-center text-center">
+          <img src={Cart} alt="cart icon" />
+          <h3 className="text-xl font-black text-[#101727] leading-14">
+            Empty Cart
+          </h3>
+          <p className="text-gray-400 max-w-md text-center text-sm">
+            There is no item in the cart. Item you will add will appear here
+          </p>
+        </div>
+      )}
     </div>
   );
 }

@@ -5,12 +5,12 @@ import Process from "../components/Process";
 import Pricing from "../components/Pricing";
 import Ready from "../components/Ready";
 
-export default function Main() {
+export default function Main({ cart }) {
   return (
     <main>
       <Hero></Hero>
       <Counts></Counts>
-      <ToolsContainer></ToolsContainer>
+      <ToolsContainer cart={cart}></ToolsContainer>
       <Process></Process>
       <Pricing></Pricing>
       <Ready></Ready>

@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 
-export default function Header() {
+export default function Header({ cart }) {
     return (
-        <Navbar></Navbar>
+        <Navbar cart={cart}></Navbar>
     )
 }
