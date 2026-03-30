@@ -35,7 +35,7 @@ export default function CartContainer({ cartList, setCartList }) {
           {cartList.map((cartItem, index) => (
             <div
               key={index}
-              className="flex flex-row items-center justify-between gap-4 bg-[#F9FAFC] py-4 px-8 rounded-md mb-1"
+              className="flex flex-row items-center justify-between gap-4 bg-[#F9FAFC] py-4 px-8 rounded-md mb-3"
             >
               <div className="flex gap-4">
                 <div className="flex items-center justify-center bg-white p-3 rounded-full">
