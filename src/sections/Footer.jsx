@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#101727] text-white p-10 md:px-32 md:px-0">
+    <footer className="bg-[#101727] text-white p-10 md:px-32 md:py-0">
       <div className="footer sm:footer-horizontal pt-28">
         <p className="max-w-xs">
           <span className="text-2xl font-bold">DigiTools</span>
