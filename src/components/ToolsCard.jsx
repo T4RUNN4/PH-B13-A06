@@ -1,4 +1,11 @@
-export default function ToolsCard({ product }) {
+import { toast } from "react-toastify";
+
+export default function ToolsCard({ product, cart, setCart }) {
+  const addToCart = (product) => {
+    setCart([...cart, product]);
+    toast.success(`${product.name} is added to cart`);
+  };
+
   return (
     <div className="card bg-base-100 shadow-sm">
       <div className="card-body">
@@ -9,7 +16,7 @@ export default function ToolsCard({ product }) {
             {product.tag}
           </span>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 w-full">
           <div className="flex items-center justify-center p-2 rounded-full border border-solid border-gray-300 h-16 w-16">
             <img
               src={
@@ -50,7 +57,11 @@ export default function ToolsCard({ product }) {
           ))}
         </ul>
         <div className="mt-6">
-          <button className="btn btn-primary btn-block rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
+          <button
+            className="btn btn-primary btn-block rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
+            type="button"
+            onClick={() => addToCart(product)}
+          >
             Buy Now
           </button>
         </div>

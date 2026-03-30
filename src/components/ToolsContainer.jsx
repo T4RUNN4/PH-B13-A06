@@ -1,8 +1,8 @@
 import { use, useState } from "react";
 import ToolsCard from "./ToolsCard";
-import Cart from "../assets/products/shopping-cart.png";
+import CartContainer from "./CartContainer"
 
-export default function ToolsContainer({ cart, productsPromise }) {
+export default function ToolsContainer({ cart, setCart, productsPromise }) {
   const products = use(productsPromise);
   const [currentButton, setCurrentButton] = useState("products");
 
@@ -29,24 +29,14 @@ export default function ToolsContainer({ cart, productsPromise }) {
           Cart ({cart.length})
         </button>
       </div>
-
+      
       {currentButton === "products" ? (
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-7">
           {products.map((product, index) => (
-            <ToolsCard key={index} product={product}></ToolsCard>
+            <ToolsCard cart={cart} setCart={setCart} key={index} product={product}></ToolsCard>
           ))}
         </div>
-      ) : (
-        <div className="mt-16 flex flex-col items-center justify-center text-center">
-          <img src={Cart} alt="cart icon" />
-          <h3 className="text-xl font-black text-[#101727] leading-14">
-            Empty Cart
-          </h3>
-          <p className="text-gray-400 max-w-md text-center text-sm">
-            There is no item in the cart. Item you will add will appear here
-          </p>
-        </div>
-      )}
+      ) : <CartContainer cartList={cart} setCartList={setCart} />}
     </div>
   );
 }

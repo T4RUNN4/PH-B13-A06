@@ -12,7 +12,7 @@ const fetchProducts = async () => {
   return res.json();
 };
 
-export default function Main({ cart }) {
+export default function Main({ cart, setCart }) {
   const productsPromise = fetchProducts();
 
   return (
@@ -22,7 +22,7 @@ export default function Main({ cart }) {
       <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
         <ToolsContainer
           productsPromise={productsPromise}
-          cart={cart}
+          cart={cart} setCart={setCart}
         ></ToolsContainer>
       </Suspense>
       <Process></Process>
