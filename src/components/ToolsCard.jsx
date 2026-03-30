@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { toast } from "react-toastify";
 
 export default function ToolsCard({ product, cart, setCart }) {
+  const [status, setStatus] = useState("buy");
+  
   const addToCart = (product) => {
+    setStatus("checkout")
     setCart([...cart, product]);
     toast.success(`${product.name} is added to cart`);
   };
@@ -58,11 +62,11 @@ export default function ToolsCard({ product, cart, setCart }) {
         </ul>
         <div className="mt-6">
           <button
-            className="btn btn-primary btn-block rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
+            className={`btn btn-primary btn-block rounded-full ${status === "buy" ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : "bg-green-700 border-0"}`}
             type="button"
             onClick={() => addToCart(product)}
           >
-            Buy Now
+            {status === "buy" ? "Buy Now" : "Added to cart"}
           </button>
         </div>
       </div>
