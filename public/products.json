@@ -19,7 +19,7 @@
         "name": "Stock Image Vault",
         "description": "Access millions of high-resolution stock images, vectors, and illustrations for any project.",
         "price": 19,
-        "period": "monthly",
+        "period": "yearly",
         "tag": "Popular",
         "tagType": "Popular",
         "features": [
@@ -34,7 +34,7 @@
         "name": "Smart Resume Builder",
         "description": "Create professional, ATS-friendly resumes with guided templates and smart suggestions.",
         "price": 15,
-        "period": "monthly",
+        "period": "one-time",
         "tag": "New",
         "tagType": "New",
         "features": [
@@ -79,7 +79,7 @@
         "name": "Automation Toolkit",
         "description": "Automate repetitive tasks and workflows to save time and boost productivity.",
         "price": 35,
-        "period": "monthly",
+        "period": "yearly",
         "tag": "Popular",
         "tagType": "Popular",
         "features": [
