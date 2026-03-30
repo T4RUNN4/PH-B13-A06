@@ -4,7 +4,7 @@ import Icon from "../assets/badge-icon.png"
 
 export default function Hero() {
   return (
-    <div className="hero md:px-32 min-h-screen">
+    <div className="hero md:px-16 lg:px-32 min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img src={HeroImage} className="max-w-sm rounded-lg" />
         <div className="max-w-md text-center lg:text-left mt-4 lg:mt-0">

@@ -8,8 +8,13 @@ export default function PricingCard({
 }) {
   return (
     <div
-      className={`card ${isPopular ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "bg-[#F9FAFC]"} shadow-sm`}
+      className={`card ${isPopular ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white" : "bg-[#F9FAFC]"} shadow-sm relative`}
     >
+      <div className={`flex items-center justify-center relative -top-4 ${isPopular ? "" : "hidden"}`}>
+        <span className="badge rounded-full text-[#BB4D00] bg-[#FEF3C6] px-3 py-4 text-sm">
+          Most Popular
+        </span>
+      </div>
       <div className="card-body">
         <div className="flex flex-col gap-4">
           <h2 className="text-2xl font-bold">{name}</h2>

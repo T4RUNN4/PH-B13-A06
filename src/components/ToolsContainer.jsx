@@ -2,7 +2,7 @@ import ToolsCard from "./ToolsCard";
 
 export default function ToolsContainer() {
   return (
-    <div className="flex flex-col items-center justify-center px-4 md:px-32 py-28">
+    <div className="flex flex-col items-center justify-center px-4 md:px-16 lg:px-32 py-28">
       <h3 className="text-4xl font-black text-[#101727] leading-14">
         Premium Digital Tools
       </h3>
@@ -16,7 +16,7 @@ export default function ToolsContainer() {
         </button>
         <button className="btn btn-ghost">Cart (0)</button>
       </div>
-      <div className="mt-10 grid grid-cols-2 lg:grid-cols-3 items-center justify-center gap-7">
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-7">
         <ToolsCard></ToolsCard>
         <ToolsCard></ToolsCard>
         <ToolsCard></ToolsCard>
