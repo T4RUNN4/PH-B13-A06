@@ -5,12 +5,12 @@ export default function Counst() {
         <h3 className="text-4xl font-extrabold">50k+</h3>
         <p>Active user</p>
       </div>
-      <div class="divider divider-horizontal before:bg-gray-300/50 after:bg-gray-300/50"></div>
+      <div className="divider divider-horizontal before:bg-gray-300/50 after:bg-gray-300/50"></div>
       <div className="flex flex-col items-center justify-center gap-3">
         <h3 className="text-4xl font-extrabold">200+</h3>
         <p>Premium Tools</p>
       </div>
-      <div class="divider divider-horizontal before:bg-gray-300/50 after:bg-gray-300/50"></div>
+      <div className="divider divider-horizontal before:bg-gray-300/50 after:bg-gray-300/50"></div>
       <div className="flex flex-col items-center justify-center gap-3">
         <h3 className="text-4xl font-extrabold">4.9</h3>
         <p>Rating</p>

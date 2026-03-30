@@ -69,7 +69,7 @@ export default function Footer() {
           </div>
         </nav>
       </div>
-      <div class="divider before:bg-gray-300/50 after:bg-gray-300/50 py-8"></div>
+      <div className="divider before:bg-gray-300/50 after:bg-gray-300/50 py-8"></div>
       <div className="footer sm:footer-horizontal footer-center pb-10 flex flex-col md:flex-row justify-between">
         <p className="text-gray-400">
           © {new Date().getFullYear()} DigiTools - All right reserved

@@ -6,6 +6,7 @@ import Pricing from "../components/Pricing";
 import Ready from "../components/Ready";
 
 export default function Main({ cart }) {
+  
   return (
     <main>
       <Hero></Hero>
