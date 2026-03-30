@@ -3,6 +3,7 @@ import Counts from "../components/Counts";
 import ToolsContainer from "../components/ToolsContainer";
 import Process from "../components/Process";
 import Pricing from "../components/Pricing";
+import Ready from "../components/Ready";
 
 export default function Main() {
   return (
@@ -12,6 +13,7 @@ export default function Main() {
       <ToolsContainer></ToolsContainer>
       <Process></Process>
       <Pricing></Pricing>
+      <Ready></Ready>
     </main>
   );
 }
