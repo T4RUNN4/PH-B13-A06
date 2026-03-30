@@ -1,6 +1,6 @@
 export default function Ready() {
   return (
-    <div className="md:px-32 mt-10 lg:mt-0 bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-16 flex flex-col text-center text-white">
+    <div className="px-4 md:px-32 mt-10 lg:mt-0 bg-linear-to-r from-[#4F39F6] to-[#9514FA] py-16 flex flex-col text-center text-white">
       <h3 className="text-3xl font-black text-white leading-14">
         Ready to Transform Your Workflow?
       </h3>

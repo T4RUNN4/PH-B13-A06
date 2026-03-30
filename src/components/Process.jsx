@@ -31,14 +31,14 @@ export default function Process() {
   };
 
   return (
-    <div className="bg-[#F9FAFC] text-center md:px-32 py-28">
+    <div className="bg-[#F9FAFC] text-center px-4 md:px-32 py-28">
       <h3 className="text-3xl font-black text-[#101727] leading-14">
         Get Started in 3 Steps
       </h3>
       <p className="text-gray-400 text-sm">
         Start using premium digital tools in minutes, not hours.
       </p>
-      <div className="grid grid-cols-3 gap-8 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-10">
         {Object.values(details).map((detail) => (
           <ProcessCard
             key={detail.stepCount}

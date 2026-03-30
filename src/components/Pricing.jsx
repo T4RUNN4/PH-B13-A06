@@ -51,14 +51,14 @@ export default function Pricing() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center md:px-32 py-28">
-      <h3 className="text-3xl font-black text-[#101727] leading-14">
+    <div className="flex flex-col items-center justify-center px-4 md:px-32 py-28">
+      <h3 className="text-2xl md:text-3xl font-black text-[#101727] leading-14">
         Simple, Transparent Pricing
       </h3>
       <p className="text-gray-400 max-w-lg text-center text-sm">
         Choose the plan that fits your needs. Upgrade or downgrade anytime.
       </p>
-      <div className="mt-10 grid grid-cols-3 gap-7 w-full">
+      <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-7 w-full">
         {Object.values(pricings).map((pricing) => (
           <PricingCard
             key={pricing.id}
