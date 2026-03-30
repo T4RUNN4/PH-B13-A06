@@ -8,7 +8,7 @@
         "tag": "Best Seller",
         "tagType": "Best Seller",
         "features": [
-            "unlimited AI generation",
+            "Unlimited AI generation",
             "50+ Writing Templates",
             "Grammer Checker"
         ],
@@ -35,8 +35,8 @@
         "description": "Create professional, ATS-friendly resumes with guided templates and smart suggestions.",
         "price": 15,
         "period": "monthly",
-        "tag": "Career Boost",
-        "tagType": "Highlight",
+        "tag": "New",
+        "tagType": "New",
         "features": [
             "ATS Optimization",
             "Modern Templates",
@@ -50,8 +50,8 @@
         "description": "Explore thousands of ready-to-use templates for presentations, posters, and branding.",
         "price": 25,
         "period": "monthly",
-        "tag": "Creative Pack",
-        "tagType": "Highlight",
+        "tag": "New",
+        "tagType": "New",
         "features": [
             "1000+ Templates",
             "Fully Editable",
@@ -65,8 +65,8 @@
         "description": "Plan, design, and publish engaging social media content with ready-made kits.",
         "price": 22,
         "period": "monthly",
-        "tag": "Trending",
-        "tagType": "Trending",
+        "tag": "Best Seller",
+        "tagType": "Best Seller",
         "features": [
             "Content Calendar",
             "Post Templates",
@@ -80,8 +80,8 @@
         "description": "Automate repetitive tasks and workflows to save time and boost productivity.",
         "price": 35,
         "period": "monthly",
-        "tag": "Pro",
-        "tagType": "Premium",
+        "tag": "Popular",
+        "tagType": "Popular",
         "features": [
             "Workflow Automation",
             "App Integrations",

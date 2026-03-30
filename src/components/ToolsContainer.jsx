@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { use, useState } from "react";
 import ToolsCard from "./ToolsCard";
-import Cart from "../assets/products/shopping-cart.png"
+import Cart from "../assets/products/shopping-cart.png";
 
-export default function ToolsContainer({ cart }) {
+export default function ToolsContainer({ cart, productsPromise }) {
+  const products = use(productsPromise);
   const [currentButton, setCurrentButton] = useState("products");
 
   return (
@@ -31,13 +32,9 @@ export default function ToolsContainer({ cart }) {
 
       {currentButton === "products" ? (
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-7">
-          {" "}
-          <ToolsCard></ToolsCard>
-          <ToolsCard></ToolsCard>
-          <ToolsCard></ToolsCard>
-          <ToolsCard></ToolsCard>
-          <ToolsCard></ToolsCard>
-          <ToolsCard></ToolsCard>
+          {products.map((product, index) => (
+            <ToolsCard key={index} product={product}></ToolsCard>
+          ))}
         </div>
       ) : (
         <div className="mt-16 flex flex-col items-center justify-center text-center">
