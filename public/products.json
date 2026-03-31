@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "AI Writing Pro",
-        "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+        "description": "Generate high-quality content, blogs, and marketing copy in just a few seconds with advanced AI.",
         "price": 29,
         "period": "monthly",
         "tag": "Best Seller",
@@ -47,7 +47,7 @@
     {
         "id": 4,
         "name": "Design Template Hub",
-        "description": "Explore thousands of ready-to-use templates for presentations, posters, and branding.",
+        "description": "Explore thousands of ready-to-use templates for anything.",
         "price": 25,
         "period": "monthly",
         "tag": "New",
@@ -61,7 +61,7 @@
     },
     {
         "id": 5,
-        "name": "Social Media Content Kit",
+        "name": "Social Media Kit",
         "description": "Plan, design, and publish engaging social media content with ready-made kits.",
         "price": 22,
         "period": "monthly",

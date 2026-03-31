@@ -11,7 +11,7 @@ export default function ToolsCard({ product, cart, setCart }) {
   };
 
   return (
-    <div className="card bg-base-100 shadow-sm">
+    <div className="card bg-base-100 shadow-sm h-full">
       <div className="card-body">
         <div className="flex justify-end">
           <span
