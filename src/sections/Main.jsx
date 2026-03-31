@@ -11,20 +11,18 @@ const fetchProducts = async () => {
   const res = await fetch("/products.json");
   return res.json();
 };
+const productsPromise = fetchProducts();
 
 export default function Main({ cart, setCart }) {
-  const productsPromise = fetchProducts();
-
   return (
     <main>
       <Hero></Hero>
       <Counts></Counts>
-      <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
-        <ToolsContainer
-          productsPromise={productsPromise}
-          cart={cart} setCart={setCart}
-        ></ToolsContainer>
-      </Suspense>
+      <ToolsContainer
+        productsPromise={productsPromise}
+        cart={cart}
+        setCart={setCart}
+      ></ToolsContainer>
       <Process></Process>
       <Pricing></Pricing>
       <Ready></Ready>

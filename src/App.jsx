@@ -12,7 +12,7 @@ function App() {
       <Header cart={cart}></Header>
       <Main cart={cart} setCart={setCart}></Main>
       <Footer></Footer>
-      <ToastContainer />
+      <ToastContainer position="top-right"/>
     </>
   );
 }

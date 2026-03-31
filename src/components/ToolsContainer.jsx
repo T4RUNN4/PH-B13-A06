@@ -1,6 +1,6 @@
 import { use, useState } from "react";
 import ToolsCard from "./ToolsCard";
-import CartContainer from "./CartContainer"
+import CartContainer from "./CartContainer";
 
 export default function ToolsContainer({ cart, setCart, productsPromise }) {
   const products = use(productsPromise);
@@ -29,14 +29,23 @@ export default function ToolsContainer({ cart, setCart, productsPromise }) {
           Cart ({cart.length})
         </button>
       </div>
-      
-      {currentButton === "products" ? (
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-7">
-          {products.map((product, index) => (
-            <ToolsCard cart={cart} setCart={setCart} key={index} product={product}></ToolsCard>
-          ))}
-        </div>
-      ) : <CartContainer cartList={cart} setCartList={setCart} />}
+
+      <div className="mt-10 min-w-full p-10 border border-solid border-gray-300 rounded-md">
+        {currentButton === "products" ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-7">
+            {products.map((product) => (
+              <ToolsCard
+                cart={cart}
+                setCart={setCart}
+                key={product.id}
+                product={product}
+              ></ToolsCard>
+            ))}
+          </div>
+        ) : (
+          <CartContainer cartList={cart} setCartList={setCart} />
+        )}
+      </div>
     </div>
   );
 }

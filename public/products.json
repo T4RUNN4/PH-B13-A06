@@ -31,7 +31,7 @@
     },
     {
         "id": 3,
-        "name": "Smart Resume Builder",
+        "name": "Resume Builder",
         "description": "Create professional, ATS-friendly resumes with guided templates and smart suggestions.",
         "price": 15,
         "period": "one-time",
@@ -46,7 +46,7 @@
     },
     {
         "id": 4,
-        "name": "Design Template Hub",
+        "name": "Design Template",
         "description": "Explore thousands of ready-to-use templates for anything.",
         "price": 25,
         "period": "monthly",

@@ -16,7 +16,7 @@ export default function CartContainer({ cartList, setCartList }) {
   }
 
   return (
-    <div className="mt-16 min-w-full p-10 border border-solid border-gray-300 rounded-md">
+    <>
       {cartList.length === 0 ? (
         <div className="flex flex-col items-center justify-center text-center">
           <img src={CartImage} alt="cart icon" />
@@ -32,9 +32,9 @@ export default function CartContainer({ cartList, setCartList }) {
           <h3 className="text-2xl font-bold text-[#101727] leading-14 mb-6">
             Your Cart
           </h3>
-          {cartList.map((cartItem, index) => (
+          {cartList.map((cartItem) => (
             <div
-              key={index}
+              key={cartItem.name}
               className="flex flex-row items-center justify-between gap-4 bg-[#F9FAFC] py-4 px-8 rounded-md mb-3"
             >
               <div className="flex gap-4">
@@ -71,6 +71,6 @@ export default function CartContainer({ cartList, setCartList }) {
           </button>
         </>
       )}
-    </div>
+    </>
   );
 }
